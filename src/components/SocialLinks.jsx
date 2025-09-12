@@ -23,7 +23,7 @@ const socialLinks = [
   {
     name: "Instagram",
     displayName: "Instagram",
-    subText: "@dhomanhuri_",
+    subText: "@dhomanhuri",
     icon: Instagram,
     url: "https://www.instagram.com/dhomanhuri_/?hl=id",
     color: "#E4405F",
@@ -32,7 +32,7 @@ const socialLinks = [
   {
     name: "YouTube",
     displayName: "Youtube",
-    subText: "@eki zulfar",
+    subText: "@dhomanhuri",
     icon: Youtube,
     url: "https://www.youtube.com/@dhomanhuri",
     color: "#FF0000",
@@ -180,7 +180,7 @@ const SocialLinks = () => {
 
         {/* Second Row - Instagram & YouTube */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[instagram, youtube].map((link, index) => (
+          {[instagram, tiktok].map((link, index) => (
             <a
               key={link.name}
               href={link.url}
@@ -239,7 +239,7 @@ const SocialLinks = () => {
 
         {/* Third Row - GitHub & TikTok */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {[github, tiktok].map((link, index) => (
+          {[github].map((link, index) => (
             <a
               key={link.name}
               href={link.url}
